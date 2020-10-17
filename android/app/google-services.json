@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "287576365692",
+    "firebase_url": "https://boilerplate-flutter-getx.firebaseio.com",
+    "project_id": "boilerplate-flutter-getx",
+    "storage_bucket": "boilerplate-flutter-getx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287576365692:android:c59f9b1100309713ee07f9",
+        "android_client_info": {
+          "package_name": "br.com.renatospindola.boilerplate_firebase_getx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287576365692-b2ec5cscat3f8jskj24dfbahe0eqj45m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.renatospindola.boilerplate_firebase_getx",
+            "certificate_hash": "e554b69c1ca64d7f9f5e3935d50dd24102ffe8bf"
+          }
+        },
+        {
+          "client_id": "287576365692-1edr5t21019t235f6b8p8lesbvlqb88c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsBZV9sgpPeRcqpzNx0heJ6FKyL8XL66o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287576365692-1edr5t21019t235f6b8p8lesbvlqb88c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
