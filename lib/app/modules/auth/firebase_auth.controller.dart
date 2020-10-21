@@ -11,6 +11,8 @@ class FirebaseAuthController extends GetxController {
       Get.find<LocalAuthRepository>();
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
 
+  RxBool isLoading = false.obs;
+
   String _name, _email, _password, _confirmPassword;
 
   @override
@@ -35,6 +37,7 @@ class FirebaseAuthController extends GetxController {
   }
 
   void login() async {
+    isLoading.value = true;
     _firebaseAuthRepository.loginWithEmail(
       _email,
       _password,
@@ -44,9 +47,11 @@ class FirebaseAuthController extends GetxController {
   void registro() {
     if (_password != _confirmPassword) {
       Get.defaultDialog(
-          onConfirm: () => print("Ok"),
-          middleText: "As senhas são diferentes.");
+        onConfirm: () => print("Ok"),
+        middleText: "As senhas são diferentes.",
+      );
     } else {
+      isLoading.value = true;
       _firebaseAuthRepository.signUpWithEmail(
         _name,
         _email,
@@ -56,6 +61,7 @@ class FirebaseAuthController extends GetxController {
   }
 
   void resetPassword() {
+    isLoading.value = true;
     _firebaseAuthRepository.resetPassword(_email);
   }
 
@@ -73,6 +79,7 @@ class FirebaseAuthController extends GetxController {
   }
 
   init() async {
+    isLoading.value = false;
     _resetFields();
   }
 }
