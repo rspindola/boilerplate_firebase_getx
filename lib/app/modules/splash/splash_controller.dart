@@ -9,6 +9,7 @@ class SplashController extends GetxController {
   }
 
   _init() async {
+    await Future.delayed(Duration(seconds: 15));
     FirebaseAuth.instance.authStateChanges().listen(
       (User user) {
         if (user == null) {

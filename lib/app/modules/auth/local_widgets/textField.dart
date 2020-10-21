@@ -1,3 +1,4 @@
+import 'package:boilerplate_firebase_getx/app/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -25,7 +26,10 @@ class CustomTextField extends StatelessWidget {
         children: <Widget>[
           Text(
             title,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 15,
+            ),
           ),
           SizedBox(
             height: 10,
@@ -37,7 +41,7 @@ class CustomTextField extends StatelessWidget {
             obscureText: isPassword,
             decoration: InputDecoration(
               border: InputBorder.none,
-              fillColor: Color(0xfff3f3f4),
+              fillColor: AppColors.LIGHT,
               filled: true,
             ),
           )

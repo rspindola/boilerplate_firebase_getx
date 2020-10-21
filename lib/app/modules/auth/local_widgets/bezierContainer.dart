@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:boilerplate_firebase_getx/app/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 import 'customClipper.dart';
@@ -18,10 +19,15 @@ class BezierContainer extends StatelessWidget {
           height: MediaQuery.of(context).size.height * .5,
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [Color(0xfffbb448), Color(0xffe46b10)])),
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                AppColors.SECONDARY_COLOR,
+                AppColors.PRIMARY_COLOR,
+              ],
+            ),
+          ),
         ),
       ),
     ));

@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // ignore: non_constant_identifier_names
-  static final MaterialColor PRIMARY_COLOR = _factoryColor(0xff2B3340);
+  static final MaterialColor PRIMARY_COLOR = _factoryColor(0xffe46b10);
+
+  // ignore: non_constant_identifier_names
+  static final MaterialColor SECONDARY_COLOR = _factoryColor(0xfffbb448);
 
   // ignore: non_constant_identifier_names
   static final MaterialColor LIGHT = _factoryColor(0xfff4f4f8);
@@ -17,10 +20,7 @@ class AppColors {
   static final MaterialColor WHITE = _factoryColor(0xffffffff);
 
   // ignore: non_constant_identifier_names
-  static final MaterialColor GREEN = _factoryColor(0xff349e40);
-
-  // ignore: non_constant_identifier_names
-  static final MaterialColor LIGHT_GREEN = _factoryColor(0xff3AB54A);
+  static final MaterialColor LIGHT_ORANGE = _factoryColor(0xfff79c4f);
 
   // ignore: non_constant_identifier_names
   static final MaterialColor SHADOW = _factoryColor(0xffE7EAF0);

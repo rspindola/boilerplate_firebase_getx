@@ -1,3 +1,4 @@
+import 'package:boilerplate_firebase_getx/app/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class SubmitButton extends StatelessWidget {
@@ -20,17 +21,18 @@ class SubmitButton extends StatelessWidget {
           ),
           boxShadow: <BoxShadow>[
             BoxShadow(
-                color: Colors.grey.shade200,
-                offset: Offset(2, 4),
-                blurRadius: 5,
-                spreadRadius: 2)
+              color: AppColors.SHADOW,
+              offset: Offset(2, 4),
+              blurRadius: 5,
+              spreadRadius: 2,
+            )
           ],
           gradient: LinearGradient(
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
             colors: [
-              Color(0xfffbb448),
-              Color(0xfff7892b),
+              AppColors.SECONDARY_COLOR,
+              AppColors.PRIMARY_COLOR,
             ],
           ),
         ),

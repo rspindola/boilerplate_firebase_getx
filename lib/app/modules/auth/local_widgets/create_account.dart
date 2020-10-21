@@ -1,3 +1,4 @@
+import 'package:boilerplate_firebase_getx/app/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -32,7 +33,7 @@ class CreateAccount extends StatelessWidget {
             Text(
               action,
               style: TextStyle(
-                color: Color(0xfff79c4f),
+                color: AppColors.LIGHT_ORANGE,
                 fontSize: 13,
                 fontWeight: FontWeight.w600,
               ),

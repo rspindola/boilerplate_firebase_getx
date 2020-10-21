@@ -4,6 +4,8 @@ import 'package:boilerplate_firebase_getx/app/modules/auth/login_page.dart';
 import 'package:boilerplate_firebase_getx/app/modules/auth/register_page.dart';
 import 'package:boilerplate_firebase_getx/app/modules/home/home_bindings.dart';
 import 'package:boilerplate_firebase_getx/app/modules/home/home_page.dart';
+import 'package:boilerplate_firebase_getx/app/modules/profile/profile_bindings.dart';
+import 'package:boilerplate_firebase_getx/app/modules/profile/profile_page.dart';
 import 'package:boilerplate_firebase_getx/app/modules/splash/splash_binding.dart';
 import 'package:boilerplate_firebase_getx/app/modules/splash/splash_page.dart';
 import 'package:get/route_manager.dart';
@@ -16,11 +18,6 @@ class AppPages {
       name: AppRoutes.SPLASH,
       page: () => SplashPage(),
       binding: SplashBinding(),
-    ),
-    GetPage(
-      name: AppRoutes.HOME,
-      page: () => HomePage(),
-      binding: HomeBinding(),
     ),
     GetPage(
       name: AppRoutes.LOGIN,
@@ -36,6 +33,16 @@ class AppPages {
       name: AppRoutes.FORGOT_PASSWORD,
       page: () => ForgotPasswordPage(),
       binding: FirebaseAuthBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.HOME,
+      page: () => HomePage(),
+      binding: HomeBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.PROFILE,
+      page: () => ProfilePage(),
+      binding: ProfileBinding(),
     ),
   ];
 }

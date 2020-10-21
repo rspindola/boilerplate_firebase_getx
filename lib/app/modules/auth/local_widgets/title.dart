@@ -1,3 +1,4 @@
+import 'package:boilerplate_firebase_getx/app/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomTitle extends StatelessWidget {
@@ -9,17 +10,17 @@ class CustomTitle extends StatelessWidget {
         text: 'd',
         style: TextStyle(
           fontWeight: FontWeight.w700,
-          color: Color(0xffe46b10),
+          color: AppColors.PRIMARY_COLOR,
           fontSize: 30,
         ),
         children: [
           TextSpan(
             text: 'ev',
-            style: TextStyle(color: Colors.black, fontSize: 30),
+            style: TextStyle(color: AppColors.DARK, fontSize: 30),
           ),
           TextSpan(
             text: 'rnz',
-            style: TextStyle(color: Color(0xffe46b10), fontSize: 30),
+            style: TextStyle(color: AppColors.PRIMARY_COLOR, fontSize: 30),
           ),
         ],
       ),

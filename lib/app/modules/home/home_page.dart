@@ -13,7 +13,9 @@ class HomePage extends StatelessWidget {
       builder: (_) => Scaffold(
         appBar: AppBarCustom("Home"),
         body: Center(
-          child: Container(),
+          child: Center(
+            child: Text("Home"),
+          ),
         ),
       ),
     );

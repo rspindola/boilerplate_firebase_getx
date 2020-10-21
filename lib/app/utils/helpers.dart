@@ -2,9 +2,9 @@ String validateName(String value) {
   String patttern = r'(^[a-zA-Z ]*$)';
   RegExp regExp = new RegExp(patttern);
   if (value.length == 0) {
-    return "Name is required";
+    return "Nome é obrigatório";
   } else if (!regExp.hasMatch(value)) {
-    return "Name must be a-z and A-Z";
+    return "O nome precisa ser de a-z e A-Z";
   }
   return null;
 }
@@ -21,8 +21,8 @@ String validateMobile(String value) {
 }
 
 String validatePassword(String value) {
-  if (value.length < 6)
-    return 'Password must be more than 5 charaters';
+  if (value.length <= 6)
+    return 'Senha precisa no minimo de 6 caracteres';
   else
     return null;
 }
@@ -32,7 +32,7 @@ String validateEmail(String value) {
       r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
   RegExp regex = new RegExp(pattern);
   if (!regex.hasMatch(value))
-    return 'Enter Valid Email';
+    return 'E-mail inválido';
   else
     return null;
 }
